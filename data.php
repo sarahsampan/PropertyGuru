@@ -11,9 +11,9 @@ class baseObj {
         }
     }
 
-    public function get ($id, $field)
+    public function get ($id, $field, $table)
     {
-        return $this->mysql->query("SELECT $field FROM $this->table WHERE ID = $id");
+        return $this->mysql->query("SELECT $field FROM $table WHERE ID = $id");
     }
 
     public function getAll ($id, $table)
