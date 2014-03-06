@@ -7,8 +7,7 @@ $id = $ArrayURL[3];
 $data = new propertyData();
 $table = $data->getTable();
 
-if (is_object($data) == true) 
-	$status = '200 OK';
+if (is_object($data) == true) $status = '200 OK';
 
 $status_header = "HTTP/1.1 $status";
 
